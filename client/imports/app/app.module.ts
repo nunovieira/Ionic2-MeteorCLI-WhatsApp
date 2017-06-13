@@ -16,6 +16,7 @@ import { VerificationPage } from '../pages/verification/verification';
 import { PhoneService } from '../services/phone';
 import { PictureService } from '../services/picture';
 import { MyApp } from './app.component';
+import { Camera } from '@ionic-native/camera';
 
 @NgModule({
   declarations: [
@@ -55,6 +56,7 @@ import { MyApp } from './app.component';
     ShowPictureComponent
   ],
   providers: [
+    Camera,
     { provide: ErrorHandler, useClass: IonicErrorHandler },
     PhoneService,
     PictureService
